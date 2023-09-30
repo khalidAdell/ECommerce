@@ -1,0 +1,51 @@
+.banner {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../../public/images/Products/b10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 10rem;
+}
+
+.banner p {
+  color: rgb(218, 218, 218);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.banner h2 {
+  color: white;
+  font-size: 3.5rem;
+  width: 50rem;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+.banner a {
+  color: white;
+  background-color: var(--light-green);
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+
+  .banner p {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .banner h2 {
+    font-size: 3rem;
+    width: 30rem;
+  }
+  .banner a {
+    padding: 1rem 2rem;
+  }
+}

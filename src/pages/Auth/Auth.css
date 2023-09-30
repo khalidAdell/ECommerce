@@ -1,0 +1,99 @@
+.auth {
+  background-color: var(--light-green);
+  padding: 5rem;
+  height: 100vh;
+}
+.authCard {
+  background-color: #fff;
+  width: 60%;
+  padding: 3rem 1rem 2rem;
+  border-radius: 10px;
+  animation: slide-down 0.5s ease;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.auth-header {
+  font-size: 3rem;
+  color: var(--light-green);
+}
+.signBtns {
+  width: 80%;
+  margin: 1rem;
+}
+.signBtns button {
+  width: 17rem;
+  height: 4.5rem;
+  background-color: var(--light-green);
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+.authInputs {
+  width: 100%;
+}
+.authInput {
+  margin: 1rem auto;
+}
+.authInput input,
+.authInput label {
+  width: 80%;
+  text-align: left;
+}
+.authInput input {
+  height: 3.5rem;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  outline: none;
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+.authInput label {
+  font-size: 1.5rem;
+}
+
+.authSubmit {
+  width: 100%;
+  margin: 1rem 0;
+}
+.authSubmit button {
+  width: 80%;
+  height: 3.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--dark-green);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.authLink {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+.authLink a,
+.resetLink {
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+/* responsive  */
+@media screen and (max-width: 800px) {
+  .authCard {
+    width: 100%;
+  }
+}

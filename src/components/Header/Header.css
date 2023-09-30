@@ -1,0 +1,153 @@
+body {
+  margin-top: 60px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: var(--light-green);
+  color: var(--color-white);
+}
+.header {
+  width: 100%;
+  height: 7rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header a {
+  color: var(--color-white);
+  margin-left: 1rem;
+  position: relative;
+}
+.active,
+.userName,
+.active:hover,
+header a:hover,
+.logo h2 span {
+  color: var(--light-blue);
+}
+.logo h2 {
+  width: 25%;
+  color: var(--color-white);
+}
+
+.headerNav {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.headerNav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.headerNav a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background-color: var(--light-blue);
+  transition: all 0.3s;
+}
+nav a:hover::after,
+.active::after {
+  width: 100%;
+}
+.headerNav a:hover {
+  color: var(--color-white);
+}
+.right-header,
+.cart {
+  display: flex;
+  align-items: center;
+}
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart {
+  position: relative;
+}
+.cart p {
+  position: absolute;
+  top: -18px;
+  right: -14px;
+  border-radius: 50%;
+  background-color: var(--color-danger);
+  font-size: 11px;
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navMenu {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .navMenu {
+    display: flex;
+  }
+  .menuIcon,
+  .closeNav {
+    cursor: pointer;
+  }
+  .closeNav {
+    margin: 1rem 0 2rem;
+  }
+  .overlayer {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(12, 12, 22, 0.562);
+    z-index: 99;
+  }
+
+  .headerNav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--light-green);
+    transform: translateX(200%);
+    padding: 1rem;
+    z-index: 9999;
+    transition: all 0.3s;
+    line-height: 2;
+  }
+  .showNav {
+    transform: translateX(0);
+  }
+  nav ul {
+    margin: 0;
+  }
+  nav ul,
+  .right-header,
+  .right-header span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header nav a {
+    display: inline-flex;
+    margin-bottom: 10px;
+  }
+}

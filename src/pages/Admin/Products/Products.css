@@ -1,0 +1,13 @@
+.edit-btn {
+  background-color: var(--color-success);
+}
+.delete-btn {
+  background-color: var(--color-danger);
+}
+.add-category-inp {
+  height: 2.5rem;
+  font-size: 1.4rem;
+  padding: 0 5px;
+  margin: 5px 0;
+  width: 100%;
+}

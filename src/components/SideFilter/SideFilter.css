@@ -1,0 +1,82 @@
+.side-bar {
+  width: 20rem;
+  position: absolute;
+  top: 9rem;
+  left: 3rem;
+}
+.side-list {
+  display: block;
+  margin-bottom: 10px;
+}
+.side-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.category {
+  position: relative;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+.category::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(199, 199, 199);
+}
+.category svg {
+  vertical-align: middle;
+}
+.active-cat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  width: 3px;
+  background-color: red;
+}
+
+.brand-list select {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  outline: none;
+  border: 1px solid rgb(172, 172, 172);
+}
+
+.side-price input {
+  height: 2.5rem;
+  font-size: 1.4rem;
+  padding: 0 5px;
+  width: 100%;
+  outline: none;
+}
+
+.closeSide {
+  display: none;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .side-bar {
+    position: fixed;
+    top: 7rem;
+    left: -20rem;
+    padding: 1rem;
+    z-index: 1000;
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    transition: 0.3s all;
+  }
+  .showSide {
+    left: 0rem;
+  }
+  .closeSide {
+    display: block;
+  }
+}

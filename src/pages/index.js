@@ -1,0 +1,11 @@
+export { default as Home } from "./Home/Home";
+export { default as Admin } from "./Admin/Admin";
+export { default as Cart } from "./Cart/Cart";
+export { default as Contact } from "./Contact/Contact";
+export { default as MyOrders } from "./MyOrder/MyOrders";
+export { default as LogIn } from "./Auth/LogIn";
+export { default as Register } from "./Auth/Register";
+export { default as Reset } from "./Auth/Reset";
+export { default as Product } from "./Product/Product";
+export { default as NotFound } from "./NotFound/NotFound";
+export { default as Shop } from "./Shop/Shop";

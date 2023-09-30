@@ -1,0 +1,100 @@
+/* -------- orders  --------*/
+.orders-page {
+  overflow-x: auto;
+}
+.orders-table {
+  min-height: 50vh;
+  margin: 4rem auto;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  border: 2px solid var(--gray-color);
+}
+.orders-table thead {
+  font-weight: 600;
+}
+.orders-table thead td {
+  font-size: 1.6rem;
+  background-color: var(--light-green);
+  color: white;
+  border-color: var(--light-green);
+  padding: 6px 0;
+}
+.orders-table td {
+  border: 1px solid #b6b3b3;
+  text-align: center;
+  width: 170px;
+}
+.orders-table tfoot tr {
+  text-align: center;
+}
+.item img {
+  width: 8rem;
+  height: 9rem;
+  object-fit: contain;
+}
+.item-text {
+  margin-left: 1rem;
+  text-align: left;
+}
+.item-text h3 {
+  color: var(--main-color);
+  font-size: 1.4rem;
+}
+.item-text p {
+  color: rgb(95, 95, 95);
+  font-weight: 600;
+  width: 15rem;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.item-text > p:nth-child(2) {
+  color: var(--light-color);
+  font-size: 15px;
+}
+.removeBtn {
+  width: 8rem;
+  padding: 8px 1rem;
+  background-color: var(--color-danger);
+  cursor: pointer;
+  color: var(--text-light);
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.total-price {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.price {
+  color: var(--color-success);
+  font-weight: 600;
+}
+.status {
+  font-weight: 600;
+  color: rgb(133, 10, 133);
+  background-color: rgb(253, 207, 253);
+  padding: 5px 1.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.removeAllBtn {
+  display: block;
+  width: 8rem;
+  height: 3.2rem;
+  background-color: var(--color-danger);
+  color: white;
+  border: none;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.emptyMsg {
+  min-height: 55vh;
+  text-align: center;
+}
+/* -------- End orders  --------*/
