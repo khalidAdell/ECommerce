@@ -46,7 +46,8 @@ const SideFilter = ({
         ele: searchParam.get("category"),
         activeEle: searchParam.get("categoryNum"),
       });
-  }, [dispatch, searchParam]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dispatch]);
 
   // get categories and brands
   useEffect(() => {
