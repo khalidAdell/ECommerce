@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ECommerce/static/css/main.d4874e98.css",
-    "main.js": "/ECommerce/static/js/main.a9333ab5.js",
+    "main.js": "/ECommerce/static/js/main.80501588.js",
     "static/media/b10.jpg": "/ECommerce/static/media/b10.a08e172c86210ae63dad.jpg",
     "static/media/revicons.eot": "/ECommerce/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/ECommerce/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/ECommerce/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/ECommerce/index.html",
     "main.d4874e98.css.map": "/ECommerce/static/css/main.d4874e98.css.map",
-    "main.a9333ab5.js.map": "/ECommerce/static/js/main.a9333ab5.js.map"
+    "main.80501588.js.map": "/ECommerce/static/js/main.80501588.js.map"
   },
   "entrypoints": [
     "static/css/main.d4874e98.css",
-    "static/js/main.a9333ab5.js"
+    "static/js/main.80501588.js"
   ]
 }
